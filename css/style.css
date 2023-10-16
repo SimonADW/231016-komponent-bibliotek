@@ -1,0 +1,89 @@
+:root {
+	font-size: var(--font-size-base);
+	font-family: "inter", sans-serif;
+}
+
+body {
+	display: flex;
+	
+}
+
+/*  Sidebar navigation */
+nav {
+	flex-basis: 10rem;
+	padding: 1rem;
+}
+
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+.navButton--active {
+	font-weight: bold;
+}
+
+
+/*  Components section */
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+.component {
+	display: none;
+	flex-direction: column;
+	gap: var(--spacing-small);
+	margin: var(--spacing-large);
+}
+
+.component--visible {
+	display: flex;
+}
+
+.component--state {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.accordion__state--button {
+	background: var(--color-button);
+	width: 30rem;
+	height: 2rem;
+	margin-top: 0.2rem;
+	border-radius: 0.35rem;
+	text-align: start;
+	padding: 0.2rem;
+}
+
+
+.accordion__button--text::before {
+	display: inline-block;
+	content: "";
+	width: 2.2rem;
+	height: 1rem;
+
+	background: url(../assets/accordion-arrow.svg) no-repeat bottom;
+	margin: 0 var(--spacing-small);
+}
+
+
+
+.accordion__state--button:hover, 
+.accordion__state--hover {
+	background: var(--color-hover);
+}
+
+.accordion__state--expanded-content {
+	border: 1px solid black;
+	padding: var(--spacing-small);
+	border-radius: 0.35rem;
+
+}
+
+.accordion--toggle {
+	display: none;
+}
+

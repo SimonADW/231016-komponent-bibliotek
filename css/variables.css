@@ -1,6 +1,5 @@
 :root {
-
-
+	
 	--font-size-base: 24px;
 	--font-size-small: 0.7rem;
 	--font-size-medium: 1.3rem;
@@ -15,4 +14,10 @@
 	--spacing-small: var(--font-leading-base);
 	--spacing-medium: 2rem;
 	--spacing-large: 4rem;
+
+	--color-primary: black;
+	--color-secondary: white;
+	--color-button: lightgrey;
+	--color-hover: rgb(173, 173, 211);	
+	--color-active: rgb(106, 113, 141);	
 }

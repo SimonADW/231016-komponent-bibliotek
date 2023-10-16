@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Component library</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="main.js" defer></script>
+
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="navButton" data-component="accordion"><button>Accordion</button></li>
+			<li class="navButton" data-component="breadcrumb"><button>Breadcrumb</button></li>
+			<li class="navButton" data-component="button"><button>Button</button></li>
+			<li class="navButton" data-component="card"><button>Card</button></li>
+			<li class="navButton" data-component="checkkbox"><button>Checkbox</button></li>
+			<li class="navButton" data-component="toast"><button>Toast</button></li>
+		</ul>
+	</nav>	
+
+	<main>
+		<div class="component" data-name="accordion">
+			<div class="component--state">
+				<span>Normal</span>
+				<button class="accordion__state--button"><span class="accordion__button--text">Accordion title</span></button>
+			</div>
+			<div class="component--state">
+				<span>Hover</span>
+				<button class="accordion__state--button accordion__state--hover"><span class="accordion__button--text">Accordion title</span></button>
+			</div>
+			<div class="component--state">
+				<span>Expanded</span>
+				<button class="accordion__state--button accordion__state--expanded"><span class="accordion__button--text">Accordion title</span></button>
+				<div class="accordion__state--expanded-content">...some content to expland</div>
+			</div>
+			<div class="component--state">
+				<span>Example</span>
+				<button class="accordion__state--button"><span class="accordion__button--text ">Accordion title</span></button>
+				<div class="accordion__state--expanded-content accordion--toggle">...some content to expland</div>
+			</div>
+		</div>
+
+		<div class="component" data-name="breadcrumb">
+			<div class="component--state">
+				<span>Normal</span>
+				<button></button>
+			</div>
+			<div class="component--state">
+				<span>Hover</span>
+				<button></button>
+			</div>
+			<div class="component--state">
+				<span>Expanded</span>
+				<button></button>
+			</div>
+			<div class="component--state">
+				<span>Example</span>
+				<button></button>				
+			</div>
+		</div>
+
+
+		<div class="component" data-name="button">
+			<div class="component--state">
+				<span>Normal</span>
+				<button></button>
+			</div>
+			<div class="component--state">
+				<span>Hover</span>
+				<button></button>
+			</div>
+			<div class="component--state">
+				<span>Expanded</span>
+				<button></button>
+			</div>
+			<div class="component--state">
+				<span>Example</span>
+				<button></button>				
+			</div>
+	</main>
+</body>
+</html>

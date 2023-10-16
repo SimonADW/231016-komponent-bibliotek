@@ -13,3 +13,15 @@ img {
 a {
 	color: inherit;
 }
+
+button {
+	background: transparent;
+	border: none;
+	font-size: inherit;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+}
